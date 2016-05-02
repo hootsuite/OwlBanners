@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="OwlBannersDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U19-4W-Kcw">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTW-Re-y7M">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pwy-xC-lZb">
+                                                <rect key="frame" x="160" y="100" width="281" height="381"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNI-rt-fWE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="281" height="30"/>
+                                                        <state key="normal" title="Success Banner">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="showSuccessBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ok-MJ-P7p"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNN-cY-OLL">
+                                                        <rect key="frame" x="0.0" y="38" width="281" height="30"/>
+                                                        <state key="normal" title="Another Success Banner">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="showAnotherSuccessBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mu8-3I-8jM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKP-8x-Dfc">
+                                                        <rect key="frame" x="0.0" y="76" width="281" height="30"/>
+                                                        <state key="normal" title="Warning Banner">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="showWarningBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VEI-ql-b8r"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5js-lJ-Ead">
+                                                        <rect key="frame" x="0.0" y="114" width="281" height="30"/>
+                                                        <state key="normal" title="Error Banner">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="showErrorBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zI5-pz-9cN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jW-Hw-WOF">
+                                                        <rect key="frame" x="0.0" y="152" width="281" height="30"/>
+                                                        <state key="normal" title="Custom Banner">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="showCustomBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uxo-Bd-uIB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGI-b2-4ZN">
+                                                        <rect key="frame" x="0.0" y="190" width="281" height="30"/>
+                                                        <state key="normal" title="Another Custom Banner">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="showAnotherCustomBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQa-na-Bd2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ek5-bN-9ba">
+                                                        <rect key="frame" x="0.0" y="228" width="281" height="30"/>
+                                                        <state key="normal" title="Success Banner (custom timing)">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="showSuccessBannerWithCustomTiming:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v5D-M3-tM0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWe-FQ-46W">
+                                                        <rect key="frame" x="0.0" y="266" width="281" height="30"/>
+                                                        <state key="normal" title="Success Banner (requires user dismissal)">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="showSuccessBannerRequiresUserDismissal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4h6-eD-aGk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pf0-QX-xiB">
+                                                        <rect key="frame" x="0.0" y="304" width="281" height="30"/>
+                                                        <state key="normal" title="Success Banner (w/ user dismiss action)">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="showSuccessBannerWithUserDismissAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8hd-pf-Mvm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHp-AH-Ot6">
+                                                        <rect key="frame" x="0.0" y="342" width="281" height="1"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="HrE-Hd-AS4"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LP6-du-MDB">
+                                                        <rect key="frame" x="0.0" y="351" width="281" height="30"/>
+                                                        <state key="normal" title="Present Test View Controller">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="presentTestViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o2A-lW-KNk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="mHp-AH-Ot6" firstAttribute="width" secondItem="Pwy-xC-lZb" secondAttribute="width" id="8He-ll-Qk3"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Pwy-xC-lZb" firstAttribute="centerX" secondItem="WTW-Re-y7M" secondAttribute="centerX" id="2ut-sr-2Up"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" secondItem="Pwy-xC-lZb" secondAttribute="height" id="Is9-WP-OHM"/>
+                                            <constraint firstItem="Pwy-xC-lZb" firstAttribute="centerY" secondItem="WTW-Re-y7M" secondAttribute="centerY" id="Pba-Ui-lRz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WTW-Re-y7M" firstAttribute="height" relation="greaterThanOrEqual" secondItem="U19-4W-Kcw" secondAttribute="height" id="38I-4o-fyH"/>
+                                    <constraint firstItem="WTW-Re-y7M" firstAttribute="centerY" secondItem="U19-4W-Kcw" secondAttribute="centerY" id="Ai3-Ub-OVb"/>
+                                    <constraint firstAttribute="trailing" secondItem="WTW-Re-y7M" secondAttribute="trailing" id="HDU-Rd-IE3"/>
+                                    <constraint firstItem="WTW-Re-y7M" firstAttribute="top" secondItem="U19-4W-Kcw" secondAttribute="top" id="LK1-Ad-f4z"/>
+                                    <constraint firstItem="WTW-Re-y7M" firstAttribute="leading" secondItem="U19-4W-Kcw" secondAttribute="leading" id="WV1-SA-Gek"/>
+                                    <constraint firstAttribute="bottom" secondItem="WTW-Re-y7M" secondAttribute="bottom" id="XIp-g4-KhI"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U19-4W-Kcw" secondAttribute="bottom" id="1CZ-2v-vdK"/>
+                            <constraint firstItem="U19-4W-Kcw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3Fd-6M-Sz8"/>
+                            <constraint firstItem="U19-4W-Kcw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CSm-8E-40m"/>
+                            <constraint firstItem="WTW-Re-y7M" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Kva-zw-0pQ"/>
+                            <constraint firstAttribute="trailing" secondItem="U19-4W-Kcw" secondAttribute="trailing" id="i5S-Ln-fVV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-536" y="-696"/>
+        </scene>
+    </scenes>
+</document>
