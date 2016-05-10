@@ -79,7 +79,7 @@ banner.enqueue()
 
 This will display our banner as so:
 
-![My first banner](https://github.hootops.com/storage/user/117/files/a8f557a0-0e19-11e6-89d2-b0d9b8ed0bc9)
+![My first banner](https://cloud.githubusercontent.com/assets/5861750/15160900/c1233640-16b0-11e6-8fba-61d2c2149371.gif)
 
 When multiple banners are enqueued, banners will display in order, one-at-a-time, coalescing duplicates.
 
