@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.hootops.com/iOS/OwlBanners.git", :tag => "0.1.2" }
   s.source_files  = 'OwlBanners'
   s.resource = "OwlBanners/**/*.{png,bundle,xib,nib}"
-  s.weak_framework = "XCTest"
+  s.framework = "XCTest"
   s.requires_arc = true
 end
