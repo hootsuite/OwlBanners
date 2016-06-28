@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "Apache", :file => "LICENSE.md" }
   s.author       = { 'Brett Stover' => 'iPhone@hootsuite' }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/hootsuite/OwlBanners.git", :tag => "0.1.2" }
+  s.source       = { :git => "https://github.com/hootsuite/OwlBanners.git", :tag => "v0.1.2" }
   s.source_files  = 'OwlBanners'
   s.resource = "OwlBanners/**/*.{png,bundle,xib,nib}"
   s.framework = "XCTest"
