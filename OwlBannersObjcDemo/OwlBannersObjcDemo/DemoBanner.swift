@@ -11,14 +11,14 @@ import OwlBanners
 
 enum DemoBannerStyle: BannerStyle {
     case Success, Warning, Error, Info
-    
+
     var bannerConfiguration: BannerConfiguration {
-        return BannerConfiguration(bannerView: DemoBannerView.bannerView(self), bufferHeight: 100.0,  preferredStatusBarStyle: .Default, defaultRequiresUserDismissal: false)
+        return BannerConfiguration(bannerView: DemoBannerView.bannerView(self), bufferHeight: 100.0, preferredStatusBarStyle: .Default, defaultRequiresUserDismissal: false)
     }
 }
 
 class DemoBanner: Banner {
-    
+
     static func successBanner(title: String) -> DemoBanner {
         return DemoBanner(DemoBannerStyle.Success, title: title)
     }
@@ -26,13 +26,13 @@ class DemoBanner: Banner {
     static func warningBanner(title: String) -> DemoBanner {
         return DemoBanner(DemoBannerStyle.Warning, title: title)
     }
-    
+
     static func errorBanner(title: String) -> DemoBanner {
         return DemoBanner(DemoBannerStyle.Error, title: title)
     }
-    
+
     static func infoBanner(title: String) -> DemoBanner {
         return DemoBanner(DemoBannerStyle.Info, title: title)
     }
-    
+
 }
