@@ -11,7 +11,7 @@ import UIKit
 import OwlBanners
 
 class DemoBannerView: UIView, BannerView {
-    
+
     @IBOutlet weak var symbolLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
 
@@ -19,15 +19,15 @@ class DemoBannerView: UIView, BannerView {
         get { return titleLabel.text ?? "" }
         set { titleLabel.text = newValue }
     }
-    
+
     class func bannerView() -> DemoBannerView {
         let nib = UINib.init(nibName: "DemoBannerView", bundle: nil)
         return nib.instantiateWithOwner(nil, options: nil).first as! DemoBannerView
     }
-    
+
     class func bannerView(bannerStyle: DemoBannerStyle) -> DemoBannerView {
         let bannerView = DemoBannerView.bannerView()
-        
+
         switch bannerStyle {
         case .Success:
             bannerView.backgroundColor = .greenColor()
@@ -42,9 +42,9 @@ class DemoBannerView: UIView, BannerView {
             bannerView.backgroundColor = .cyanColor()
             bannerView.symbolLabel.text = "!"
         }
-        
+
         return bannerView
     }
-    
-    
+
+
 }

@@ -10,13 +10,13 @@ import UIKit
 import OwlBanners
 
 class DogBannerView: UIView, BannerView {
-    
+
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
             titleLabel.text = ""
         }
     }
-    
+
     var title: String {
         get { return titleLabel.text ?? "" }
         set {

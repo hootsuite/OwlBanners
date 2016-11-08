@@ -12,9 +12,9 @@ import OwlBanners
 
 enum AnimalBannerStyle: BannerStyle {
     case Cat, Dog
-    
+
     var bannerConfiguration: BannerConfiguration {
-        switch (self) {
+        switch self {
         case .Cat:
             let nib = UINib(nibName: "CatBannerView", bundle: nil)
             let catBannerView = nib.instantiateWithOwner(nil, options: nil).first as! UIView
