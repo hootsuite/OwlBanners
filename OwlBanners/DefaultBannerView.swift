@@ -18,7 +18,6 @@ public enum DefaultBannerStyle: BannerStyle {
     }
 }
 
-
 /// A banner with a default style.
 class DefaultBannerView: UIView, BannerView {
 
@@ -31,7 +30,7 @@ class DefaultBannerView: UIView, BannerView {
 
     class func bannerView() -> DefaultBannerView {
         let bundle = Bundle(for: DefaultBannerView.self)
-        let nib = UINib.init(nibName: "DefaultBannerView", bundle: bundle)
+        let nib = UINib(nibName: "DefaultBannerView", bundle: bundle)
         return nib.instantiate(withOwner: nil, options: nil).first as! DefaultBannerView
     }
 

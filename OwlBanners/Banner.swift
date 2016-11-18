@@ -1,6 +1,5 @@
 //  Copyright © 2015 Hootsuite. All rights reserved.
 
-
 import UIKit
 
 /// Defines a banner's style.
@@ -8,7 +7,6 @@ public protocol BannerStyle {
     /// The presentation parameters.
     var bannerConfiguration: BannerConfiguration { get }
 }
-
 
 /// Things that have a title.
 public protocol BannerView {

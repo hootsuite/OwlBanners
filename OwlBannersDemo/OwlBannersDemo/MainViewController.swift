@@ -1,14 +1,7 @@
-//
-//  ViewController.swift
-//  BannerPrototype
-//
-//  Created by Brett Stover on 2015-09-18.
 //  Copyright © 2015 Hootsuite. All rights reserved.
-//
 
 import UIKit
 import OwlBanners
-
 
 class MainViewController: UIViewController {
 

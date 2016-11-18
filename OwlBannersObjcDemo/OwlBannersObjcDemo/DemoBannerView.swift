@@ -1,10 +1,4 @@
-//
-//  DemoBannerView.swift
-//  OwlBannersObjcDemo
-//
-//  Created by Brett Stover on 2015-12-04.
 //  Copyright © 2015 Hootsuite. All rights reserved.
-//
 
 import Foundation
 import UIKit
@@ -21,7 +15,7 @@ class DemoBannerView: UIView, BannerView {
     }
 
     class func bannerView() -> DemoBannerView {
-        let nib = UINib.init(nibName: "DemoBannerView", bundle: nil)
+        let nib = UINib(nibName: "DemoBannerView", bundle: nil)
         return nib.instantiateWithOwner(nil, options: nil).first as! DemoBannerView
     }
 
@@ -45,6 +39,5 @@ class DemoBannerView: UIView, BannerView {
 
         return bannerView
     }
-
 
 }
