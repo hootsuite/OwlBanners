@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OwlBanners"
-  s.version      = "0.1.2"
+  s.version      = "0.2.0"
   s.ios.deployment_target = "8.0"
   s.summary      = "OwlBanners is a simple Swift framework for displaying custom banners."
   s.homepage     = "https://github.com/hootsuite/OwlBanners"
