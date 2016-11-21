@@ -10,29 +10,29 @@ import Foundation
 import OwlBanners
 
 enum DemoBannerStyle: BannerStyle {
-    case Success, Warning, Error, Info
+    case success, warning, error, info
 
     var bannerConfiguration: BannerConfiguration {
-        return BannerConfiguration(bannerView: DemoBannerView.bannerView(self), bufferHeight: 100.0, preferredStatusBarStyle: .Default, defaultRequiresUserDismissal: false)
+        return BannerConfiguration(bannerView: DemoBannerView.bannerView(self), bufferHeight: 100.0, preferredStatusBarStyle: .default, defaultRequiresUserDismissal: false)
     }
 }
 
 class DemoBanner: Banner {
 
-    static func successBanner(title: String) -> DemoBanner {
-        return DemoBanner(DemoBannerStyle.Success, title: title)
+    static func successBanner(_ title: String) -> DemoBanner {
+        return DemoBanner(DemoBannerStyle.success, title: title)
     }
 
-    static func warningBanner(title: String) -> DemoBanner {
-        return DemoBanner(DemoBannerStyle.Warning, title: title)
+    static func warningBanner(_ title: String) -> DemoBanner {
+        return DemoBanner(DemoBannerStyle.warning, title: title)
     }
 
-    static func errorBanner(title: String) -> DemoBanner {
-        return DemoBanner(DemoBannerStyle.Error, title: title)
+    static func errorBanner(_ title: String) -> DemoBanner {
+        return DemoBanner(DemoBannerStyle.error, title: title)
     }
 
-    static func infoBanner(title: String) -> DemoBanner {
-        return DemoBanner(DemoBannerStyle.Info, title: title)
+    static func infoBanner(_ title: String) -> DemoBanner {
+        return DemoBanner(DemoBannerStyle.info, title: title)
     }
 
 }

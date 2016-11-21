@@ -13,21 +13,21 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .purpleColor()
+        view.backgroundColor = .purple
 
         let label = UILabel()
         label.text = NSLocalizedString("View controller will dismiss in 4 seconds.", comment: "Test view controller dismissal message.")
-        label.textAlignment = .Center
+        label.textAlignment = .center
         view.addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
 
-        let horizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("|[label]|", options: [.AlignAllCenterY], metrics: nil, views: ["label" : label])
-        let verticalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|[label]|", options: [], metrics: nil, views: ["label" : label])
+        let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|[label]|", options: [.alignAllCenterY], metrics: nil, views: ["label" : label])
+        let verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[label]|", options: [], metrics: nil, views: ["label" : label])
 
-        NSLayoutConstraint.activateConstraints(horizontalConstraints + verticalConstraints)
+        NSLayoutConstraint.activate(horizontalConstraints + verticalConstraints)
 
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(4 * NSEC_PER_SEC)), dispatch_get_main_queue()) {
-            self.dismissViewControllerAnimated(true, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(4 * NSEC_PER_SEC)) / Double(NSEC_PER_SEC)) {
+            self.dismiss(animated: true, completion: nil)
         }
     }
 }
