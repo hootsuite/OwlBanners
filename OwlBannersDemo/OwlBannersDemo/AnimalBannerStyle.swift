@@ -11,18 +11,18 @@ import UIKit
 import OwlBanners
 
 enum AnimalBannerStyle: BannerStyle {
-    case Cat, Dog
+    case cat, dog
 
     var bannerConfiguration: BannerConfiguration {
         switch self {
-        case .Cat:
+        case .cat:
             let nib = UINib(nibName: "CatBannerView", bundle: nil)
-            let catBannerView = nib.instantiateWithOwner(nil, options: nil).first as! UIView
+            let catBannerView = nib.instantiate(withOwner: nil, options: nil).first as! UIView
             return BannerConfiguration(bannerView: catBannerView, bufferHeight: 30.0, defaultDisplayMetrics: BannerDisplayMetrics(0.5, 4, 0.25))
-        case .Dog:
+        case .dog:
             let nib = UINib(nibName: "DogBannerView", bundle: nil)
-            let dogBannerView = nib.instantiateWithOwner(nil, options: nil).first as! UIView
-            return BannerConfiguration(bannerView: dogBannerView, bufferHeight: 50.0, preferredStatusBarStyle: .LightContent, defaultDisplayMetrics: BannerDisplayMetrics(0.5, 4, 0.25))
+            let dogBannerView = nib.instantiate(withOwner: nil, options: nil).first as! UIView
+            return BannerConfiguration(bannerView: dogBannerView, bufferHeight: 50.0, preferredStatusBarStyle: .lightContent, defaultDisplayMetrics: BannerDisplayMetrics(0.5, 4, 0.25))
         }
     }
 }

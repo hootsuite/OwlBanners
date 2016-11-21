@@ -21,7 +21,7 @@ class DogBannerView: UIView, BannerView {
         get { return titleLabel.text ?? "" }
         set {
             titleLabel.text = newValue
-            titleLabel.hidden = (newValue == "")
+            titleLabel.isHidden = (newValue == "")
         }
     }
 }

@@ -16,24 +16,24 @@ class DemoBannerView: UIView, BannerView {
 
     class func bannerView() -> DemoBannerView {
         let nib = UINib(nibName: "DemoBannerView", bundle: nil)
-        return nib.instantiateWithOwner(nil, options: nil).first as! DemoBannerView
+        return nib.instantiate(withOwner: nil, options: nil).first as! DemoBannerView
     }
 
-    class func bannerView(bannerStyle: DemoBannerStyle) -> DemoBannerView {
+    class func bannerView(_ bannerStyle: DemoBannerStyle) -> DemoBannerView {
         let bannerView = DemoBannerView.bannerView()
 
         switch bannerStyle {
-        case .Success:
-            bannerView.backgroundColor = .greenColor()
+        case .success:
+            bannerView.backgroundColor = .green
             bannerView.symbolLabel.text = ":)"
-        case .Warning:
-            bannerView.backgroundColor = .yellowColor()
+        case .warning:
+            bannerView.backgroundColor = .yellow
             bannerView.symbolLabel.text = ":|"
-        case .Error:
-            bannerView.backgroundColor = .redColor()
+        case .error:
+            bannerView.backgroundColor = .red
             bannerView.symbolLabel.text = ":("
-        case .Info:
-            bannerView.backgroundColor = .cyanColor()
+        case .info:
+            bannerView.backgroundColor = .cyan
             bannerView.symbolLabel.text = "!"
         }
 
