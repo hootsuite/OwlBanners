@@ -16,25 +16,38 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kc2-CU-Ur8">
-                    <rect key="frame" x="0.0" y="100" width="600" height="40"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <rect key="frame" x="30" y="100" width="540" height="38"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_banner_complete" translatesAutoresizingMaskIntoConstraints="NO" id="Q0Z-Qe-ZAt">
+                    <rect key="frame" x="570" y="98" width="30" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="3tm-gl-e75"/>
+                        <constraint firstAttribute="width" constant="30" id="E52-pj-xJm"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="kc2-CU-Ur8" secondAttribute="trailing" id="I1q-kb-RrU"/>
-                <constraint firstAttribute="bottom" secondItem="kc2-CU-Ur8" secondAttribute="bottom" id="TPk-eO-ctz"/>
+                <constraint firstAttribute="trailing" secondItem="kc2-CU-Ur8" secondAttribute="trailing" constant="30" id="I1q-kb-RrU"/>
+                <constraint firstAttribute="trailing" secondItem="Q0Z-Qe-ZAt" secondAttribute="trailing" id="LhP-P4-obF"/>
+                <constraint firstAttribute="bottom" secondItem="kc2-CU-Ur8" secondAttribute="bottom" constant="2" id="TPk-eO-ctz"/>
                 <constraint firstItem="kc2-CU-Ur8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="XDV-U5-CAv"/>
-                <constraint firstItem="kc2-CU-Ur8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iXH-RI-rkT"/>
+                <constraint firstItem="kc2-CU-Ur8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="iXH-RI-rkT"/>
+                <constraint firstItem="kc2-CU-Ur8" firstAttribute="centerY" secondItem="Q0Z-Qe-ZAt" secondAttribute="centerY" id="mnL-bv-Vyt"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="iconImageView" destination="Q0Z-Qe-ZAt" id="q3n-vz-qwj"/>
                 <outlet property="titleLabel" destination="kc2-CU-Ur8" id="QmJ-z8-O6E"/>
             </connections>
             <point key="canvasLocation" x="93" y="174"/>
         </view>
     </objects>
+    <resources>
+        <image name="ic_banner_complete" width="14" height="14"/>
+    </resources>
 </document>

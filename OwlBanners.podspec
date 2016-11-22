@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source       = { :git => "https://github.com/hootsuite/OwlBanners.git", :tag => "v#{s.version}" }
   s.source_files = "OwlBanners"
-  s.resource     = "OwlBanners/**/*.{png,bundle,xib,nib}"
+  s.resource     = "OwlBanners/**/*.{xib,xcassets}"
   s.weak_framework = "XCTest"
   s.requires_arc = true
 end
