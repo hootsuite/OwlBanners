@@ -145,7 +145,7 @@ open class Banner: NSObject {
 
     /// Adds `self` to the queue of banners to display.
     open func enqueue() {
-        if bannerIsDuplicateOfLastItemInDisplayQueue() == false {
+        if !bannerIsDuplicateOfLastItemInDisplayQueue() {
             let operation = BlockOperation(block: {
                 let _ = Banner.displayBeginSemaphore.wait(timeout: DispatchTime.distantFuture)
                 DispatchQueue.main.async(execute: {
@@ -186,7 +186,7 @@ open class Banner: NSObject {
     }
 
     fileprivate func present() {
-        bannerView.layoutIfNeeded()
+        bannerView.superview?.layoutIfNeeded()
 
         currentStatusBarStyle = UIApplication.shared.statusBarStyle
         if let statusBarStyle = style.bannerConfiguration.preferredStatusBarStyle {
@@ -196,42 +196,45 @@ open class Banner: NSObject {
         UIView.animate(withDuration: displayMetrics.presentDuration, delay: 0, usingSpringWithDamping: Constants.presentAnimationDamping,
             initialSpringVelocity: Constants.presentAnimationVelocity,
             options: [.allowUserInteraction, .curveEaseIn], animations: {
-                if self.isDismissing == false {
-                    self.topConstraint?.constant = self.topConstraintConstantWhenDisplayed
-                    self.bannerView.layoutIfNeeded()
+                if self.isDismissing {
+                    return
                 }
+                self.topConstraint?.constant = self.topConstraintConstantWhenDisplayed
+                self.bannerView.superview?.layoutIfNeeded()
             }, completion: { _ in
-                if self.isDismissing == false {
-                    self.topConstraint?.constant = self.topConstraintConstantWhenDisplayed
+                if self.isDismissing {
+                    return
+                }
+                self.topConstraint?.constant = self.topConstraintConstantWhenDisplayed
 
-                    if self.requiresUserDismissal == false {
-                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(self.displayMetrics.displayDuration * TimeInterval(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)) {
-                            self.dismiss()
-                        }
+                if !self.requiresUserDismissal {
+                    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(self.displayMetrics.displayDuration * TimeInterval(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)) {
+                        self.dismiss()
                     }
                 }
         })
     }
 
     fileprivate func dismiss() {
-        bannerView.layoutIfNeeded()
+        bannerView.superview?.layoutIfNeeded()
 
-        if isDismissing == false {
-            isDismissing = true
-            UIApplication.shared.statusBarStyle = currentStatusBarStyle
-
-            UIView.animate(withDuration: displayMetrics.dismissDuration, delay: 0, usingSpringWithDamping: Constants.dismissAnimationDamping,
-                initialSpringVelocity: Constants.dismissAnimationVelocity,
-                options: [.beginFromCurrentState, .curveEaseIn], animations: {
-                    self.topConstraint?.constant = self.topConstraintConstantWhenHidden
-                    self.bannerView.layoutIfNeeded()
-                }, completion: { _ in
-                    self.completionAction?()
-                    self.bannerView.removeFromSuperview()
-                    Banner.displayBeginSemaphore.signal()
-                    Banner.displayEndSemaphore.signal()
-            })
+        if isDismissing {
+            return
         }
+        isDismissing = true
+        UIApplication.shared.statusBarStyle = currentStatusBarStyle
+
+        UIView.animate(withDuration: displayMetrics.dismissDuration, delay: 0, usingSpringWithDamping: Constants.dismissAnimationDamping,
+            initialSpringVelocity: Constants.dismissAnimationVelocity,
+            options: [.beginFromCurrentState, .curveEaseIn], animations: {
+                self.topConstraint?.constant = self.topConstraintConstantWhenHidden
+                self.bannerView.superview?.layoutIfNeeded()
+            }, completion: { _ in
+                self.completionAction?()
+                self.bannerView.removeFromSuperview()
+                Banner.displayBeginSemaphore.signal()
+                Banner.displayEndSemaphore.signal()
+        })
     }
 
     fileprivate func bannerIsDuplicateOfLastItemInDisplayQueue() -> Bool {
@@ -255,13 +258,13 @@ open class Banner: NSObject {
     // MARK: Notification Callbacks
 
     @objc fileprivate func deviceOrientationDidChange(_ notif: Notification) {
-        if isDismissing == false {
+        if !isDismissing {
             topConstraint?.constant = topConstraintConstantWhenDisplayed
         }
     }
 
     @objc fileprivate func applicationWillChangeStatusBarFrame(_ notif: Notification) {
-        if isDismissing == false {
+        if !isDismissing {
             topConstraint?.constant = topConstraintConstantWhenDisplayed
         }
     }
