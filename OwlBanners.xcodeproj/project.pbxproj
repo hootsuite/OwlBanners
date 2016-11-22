@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A88E55E41DE3B66F00DA5F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88E55E31DE3B66F00DA5F42 /* Assets.xcassets */; };
 		AF6DE9821BC70D2A0001598E /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DE97F1BC70D2A0001598E /* Banner.swift */; };
 		AF6DE9831BC70D2A0001598E /* DefaultBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DE9801BC70D2A0001598E /* DefaultBannerView.swift */; };
 		AF6DE9841BC70D2A0001598E /* DefaultBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6DE9811BC70D2A0001598E /* DefaultBannerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A88E55E31DE3B66F00DA5F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF6DE9331BC70CB40001598E /* OwlBanners.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OwlBanners.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6DE9381BC70CB40001598E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF6DE97F1BC70D2A0001598E /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				AF6DE9801BC70D2A0001598E /* DefaultBannerView.swift */,
 				AF6DE9811BC70D2A0001598E /* DefaultBannerView.xib */,
 				AF6DE9381BC70CB40001598E /* Info.plist */,
+				A88E55E31DE3B66F00DA5F42 /* Assets.xcassets */,
 			);
 			path = OwlBanners;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A88E55E41DE3B66F00DA5F42 /* Assets.xcassets in Resources */,
 				AF6DE9841BC70D2A0001598E /* DefaultBannerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
