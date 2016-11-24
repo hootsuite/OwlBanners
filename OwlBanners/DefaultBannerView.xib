@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,17 +12,23 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DefaultBannerView" customModule="OwlBanners" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kc2-CU-Ur8">
-                    <rect key="frame" x="30" y="100" width="540" height="38"/>
+                    <rect key="frame" x="30" y="111.5" width="260" height="20.5"/>
+                    <accessibility key="accessibilityConfiguration" hint="Alert banner title" identifier="BannerLabel">
+                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                    </accessibility>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_banner_complete" translatesAutoresizingMaskIntoConstraints="NO" id="Q0Z-Qe-ZAt">
-                    <rect key="frame" x="570" y="98" width="30" height="42"/>
+                    <rect key="frame" x="290" y="101.5" width="30" height="42"/>
+                    <accessibility key="accessibilityConfiguration" hint="Alert banner icon" identifier="BannerIcon">
+                        <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                    </accessibility>
                     <constraints>
                         <constraint firstAttribute="height" constant="42" id="3tm-gl-e75"/>
                         <constraint firstAttribute="width" constant="30" id="E52-pj-xJm"/>
@@ -30,13 +36,13 @@
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration" hint="Alert banner" identifier="BannerView"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="kc2-CU-Ur8" secondAttribute="trailing" constant="30" id="I1q-kb-RrU"/>
                 <constraint firstAttribute="trailing" secondItem="Q0Z-Qe-ZAt" secondAttribute="trailing" id="LhP-P4-obF"/>
-                <constraint firstAttribute="bottom" secondItem="kc2-CU-Ur8" secondAttribute="bottom" constant="2" id="TPk-eO-ctz"/>
-                <constraint firstItem="kc2-CU-Ur8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="XDV-U5-CAv"/>
+                <constraint firstAttribute="bottom" secondItem="kc2-CU-Ur8" secondAttribute="bottom" constant="8" id="TPk-eO-ctz"/>
                 <constraint firstItem="kc2-CU-Ur8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="iXH-RI-rkT"/>
-                <constraint firstItem="kc2-CU-Ur8" firstAttribute="centerY" secondItem="Q0Z-Qe-ZAt" secondAttribute="centerY" id="mnL-bv-Vyt"/>
+                <constraint firstItem="kc2-CU-Ur8" firstAttribute="centerY" secondItem="Q0Z-Qe-ZAt" secondAttribute="centerY" id="jfp-lz-t5f"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -44,7 +50,7 @@
                 <outlet property="iconImageView" destination="Q0Z-Qe-ZAt" id="q3n-vz-qwj"/>
                 <outlet property="titleLabel" destination="kc2-CU-Ur8" id="QmJ-z8-O6E"/>
             </connections>
-            <point key="canvasLocation" x="93" y="174"/>
+            <point key="canvasLocation" x="-13" y="174"/>
         </view>
     </objects>
     <resources>
