@@ -77,8 +77,30 @@ class DefaultBannerView: UIView, BannerView {
         return nib.instantiate(withOwner: nil, options: nil).first as! DefaultBannerView
     }
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        let contentSize = UIApplication.shared.preferredContentSizeCategory
+        let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: UIFontTextStyle.body)
+        titleLabel.font = UIFont(descriptor: descriptor.withSize(DefaultBannerView.fontSizes[contentSize] ?? 17), size: 0)
+    }
+
     func set(icon: UIImage?, accessibilityLabel: String?) {
         iconImageView.image = icon
         iconImageView.accessibilityLabel = accessibilityLabel
     }
+
+    private static let fontSizes: [UIContentSizeCategory: CGFloat] = [
+        UIContentSizeCategory.accessibilityExtraExtraExtraLarge: 18,
+        UIContentSizeCategory.accessibilityExtraExtraLarge: 18,
+        UIContentSizeCategory.accessibilityExtraLarge: 18,
+        UIContentSizeCategory.accessibilityLarge: 18,
+        UIContentSizeCategory.accessibilityMedium: 18,
+        UIContentSizeCategory.extraExtraExtraLarge: 18,
+        UIContentSizeCategory.extraExtraLarge: 17,
+        UIContentSizeCategory.extraLarge: 17,
+        UIContentSizeCategory.large: 16,
+        UIContentSizeCategory.medium: 15,
+        UIContentSizeCategory.small: 14,
+        UIContentSizeCategory.extraSmall: 13
+    ]
 }
