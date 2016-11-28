@@ -55,7 +55,7 @@ class DefaultBannerView: UIView, BannerView {
             return titleLabel.text ?? ""
         }
         set {
-            titleLabel.text = title
+            titleLabel.text = newValue
         }
     }
 
