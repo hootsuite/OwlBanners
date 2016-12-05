@@ -100,12 +100,8 @@ open class Banner: NSObject {
 
     fileprivate var topConstraint: NSLayoutConstraint? = nil
 
-    fileprivate var heightOfVisiblePortionOfBanner: CGFloat {
-        return bannerView.frame.size.height - style.bannerConfiguration.bufferHeight
-    }
-
     fileprivate var topConstraintConstantWhenHidden: CGFloat {
-        return -(heightOfVisiblePortionOfBanner + style.bannerConfiguration.bufferHeight)
+        return -(bannerView.frame.size.height + style.bannerConfiguration.bufferHeight)
     }
 
     fileprivate var topConstraintConstantWhenDisplayed: CGFloat {
@@ -168,13 +164,18 @@ open class Banner: NSObject {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
 
         let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|[bannerView]|", options: [], metrics: nil, views: ["bannerView":bannerView])
-        let heightConstraint = NSLayoutConstraint(item: bannerView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: bannerView.frame.size.height)
         topConstraint = NSLayoutConstraint(item: bannerView, attribute: .top, relatedBy: .equal, toItem: keyWindow, attribute: .top, multiplier: 1.0, constant: topConstraintConstantWhenHidden)
-        NSLayoutConstraint.activate(horizontalConstraints + [heightConstraint, topConstraint!])
+        NSLayoutConstraint.activate(horizontalConstraints + [topConstraint!])
 
         if var bannerView = bannerView as? BannerView {
             bannerView.title = title
         }
+
+        // add height constraint
+        bannerView.superview?.layoutIfNeeded()
+        let height = bannerView.frame.size.height + style.bannerConfiguration.bufferHeight
+        let heightConstraint = NSLayoutConstraint(item: bannerView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height)
+        NSLayoutConstraint.activate([heightConstraint])
 
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(Banner.bannerDismissed(_:)))
         bannerView.addGestureRecognizer(tapRecognizer)

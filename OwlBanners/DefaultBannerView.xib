@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kc2-CU-Ur8">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kc2-CU-Ur8">
                     <rect key="frame" x="30" y="111.5" width="260" height="20.5"/>
                     <accessibility key="accessibilityConfiguration" hint="Alert banner title" identifier="BannerLabel">
                         <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -38,19 +38,20 @@
             <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <accessibility key="accessibilityConfiguration" hint="Alert banner" identifier="BannerView"/>
             <constraints>
+                <constraint firstItem="Q0Z-Qe-ZAt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" id="1OE-a2-X3p"/>
                 <constraint firstAttribute="trailing" secondItem="kc2-CU-Ur8" secondAttribute="trailing" constant="30" id="I1q-kb-RrU"/>
                 <constraint firstAttribute="trailing" secondItem="Q0Z-Qe-ZAt" secondAttribute="trailing" id="LhP-P4-obF"/>
                 <constraint firstAttribute="bottom" secondItem="kc2-CU-Ur8" secondAttribute="bottom" constant="8" id="TPk-eO-ctz"/>
                 <constraint firstItem="kc2-CU-Ur8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="iXH-RI-rkT"/>
                 <constraint firstItem="kc2-CU-Ur8" firstAttribute="centerY" secondItem="Q0Z-Qe-ZAt" secondAttribute="centerY" id="jfp-lz-t5f"/>
+                <constraint firstItem="kc2-CU-Ur8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" id="une-5E-XiA"/>
             </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="iconImageView" destination="Q0Z-Qe-ZAt" id="q3n-vz-qwj"/>
                 <outlet property="titleLabel" destination="kc2-CU-Ur8" id="QmJ-z8-O6E"/>
             </connections>
-            <point key="canvasLocation" x="-13" y="174"/>
+            <point key="canvasLocation" x="-24" y="44"/>
         </view>
     </objects>
     <resources>
