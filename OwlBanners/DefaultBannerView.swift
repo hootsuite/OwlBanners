@@ -7,6 +7,7 @@ public enum DefaultBannerStyle: BannerStyle {
     case success
     case warning
     case error
+    case persistentNotice
     case persistentError
     case info
 
@@ -28,6 +29,11 @@ public enum DefaultBannerStyle: BannerStyle {
             view.backgroundColor = UIColor(red: 0.816, green: 0.286, blue: 0.286, alpha: 1)
             let icon = UIImage(named: "ic_banner_error", in: bundle, compatibleWith: nil)
             view.set(icon: icon, accessibilityLabel: "Error")
+        case .persistentNotice:
+            view.backgroundColor = UIColor(red: 0.424, green: 0.647, blue: 0.117, alpha: 1)
+            let icon = UIImage(named: "ic_banner_complete", in: bundle, compatibleWith: nil)
+            view.set(icon: icon, accessibilityLabel: "Success")
+            requireUserDismissal = true
         case .persistentError:
             view.backgroundColor = UIColor(red: 0.816, green: 0.286, blue: 0.286, alpha: 1)
             let icon = UIImage(named: "ic_banner_error", in: bundle, compatibleWith: nil)
