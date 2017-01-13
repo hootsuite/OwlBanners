@@ -4,6 +4,7 @@ import UIKit
 
 /// Defines banner default styles.
 public enum DefaultBannerStyle: BannerStyle {
+    case notice
     case success
     case warning
     case error
@@ -16,6 +17,9 @@ public enum DefaultBannerStyle: BannerStyle {
         var requireUserDismissal = false
 
         switch self {
+        case .notice:
+            view.backgroundColor = UIColor(red: 0.424, green: 0.647, blue: 0.117, alpha: 1)
+            view.set(icon: nil, accessibilityLabel: "Notice")
         case .success:
             view.backgroundColor = UIColor(red: 0.424, green: 0.647, blue: 0.117, alpha: 1)
             let icon = UIImage(named: "ic_banner_complete", in: bundle, compatibleWith: nil)
