@@ -1,4 +1,9 @@
-//  Copyright © 2015 Hootsuite. All rights reserved.
+// Copyright 2017 HootSuite Media Inc.
+//
+// This file is part of OwlBanners. The full OwlBanners copyright notice,
+// including terms governing use, modification, and redistribution, is
+// contained in the file LICENSE.md at the root of the source code distribution
+// tree.
 
 import UIKit
 
@@ -98,7 +103,7 @@ open class Banner: NSObject {
         return keyWindow!
     }
 
-    fileprivate var topConstraint: NSLayoutConstraint? = nil
+    fileprivate var topConstraint: NSLayoutConstraint?
 
     fileprivate var topConstraintConstantWhenHidden: CGFloat {
         return -(bannerView.frame.size.height + style.bannerConfiguration.bufferHeight)
@@ -163,7 +168,7 @@ open class Banner: NSObject {
         keyWindow.addSubview(bannerView)
         bannerView.translatesAutoresizingMaskIntoConstraints = false
 
-        let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|[bannerView]|", options: [], metrics: nil, views: ["bannerView":bannerView])
+        let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|[bannerView]|", options: [], metrics: nil, views: ["bannerView": bannerView])
         topConstraint = NSLayoutConstraint(item: bannerView, attribute: .top, relatedBy: .equal, toItem: keyWindow, attribute: .top, multiplier: 1.0, constant: topConstraintConstantWhenHidden)
         NSLayoutConstraint.activate(horizontalConstraints + [topConstraint!])
 

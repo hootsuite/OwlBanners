@@ -15,6 +15,8 @@
 
 /* Begin PBXFileReference section */
 		A88E55E31DE3B66F00DA5F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8B767881E5B999F006A2670 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		A8B767891E5B999F006A2670 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AF6DE9331BC70CB40001598E /* OwlBanners.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OwlBanners.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6DE9381BC70CB40001598E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF6DE97F1BC70D2A0001598E /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		AF6DE9291BC70CB40001598E = {
 			isa = PBXGroup;
 			children = (
+				A8B767881E5B999F006A2670 /* LICENSE.md */,
+				A8B767891E5B999F006A2670 /* README.md */,
 				AF6DE9351BC70CB40001598E /* OwlBanners */,
 				AF6DE9341BC70CB40001598E /* Products */,
 			);

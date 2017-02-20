@@ -1,10 +1,9 @@
+// Copyright 2017 HootSuite Media Inc.
 //
-//  TestViewController.swift
-//  BannerPrototype
-//
-//  Created by Brett Stover on 9/22/15.
-//  Copyright © 2015 Hootsuite. All rights reserved.
-//
+// This file is part of OwlBanners. The full OwlBanners copyright notice,
+// including terms governing use, modification, and redistribution, is
+// contained in the file LICENSE.md at the root of the source code distribution
+// tree.
 
 import UIKit
 
@@ -21,8 +20,8 @@ class TestViewController: UIViewController {
         view.addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
 
-        let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|[label]|", options: [.alignAllCenterY], metrics: nil, views: ["label" : label])
-        let verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[label]|", options: [], metrics: nil, views: ["label" : label])
+        let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|[label]|", options: [.alignAllCenterY], metrics: nil, views: ["label": label])
+        let verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[label]|", options: [], metrics: nil, views: ["label": label])
 
         NSLayoutConstraint.activate(horizontalConstraints + verticalConstraints)
 
