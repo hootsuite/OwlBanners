@@ -1,10 +1,9 @@
+// Copyright 2017 HootSuite Media Inc.
 //
-//  main.m
-//  OwlBannersObjcDemo
-//
-//  Created by Brett Stover on 10/8/15.
-//  Copyright © 2015 Hootsuite. All rights reserved.
-//
+// This file is part of OwlBanners. The full OwlBanners copyright notice,
+// including terms governing use, modification, and redistribution, is
+// contained in the file LICENSE.md at the root of the source code distribution
+// tree.
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
