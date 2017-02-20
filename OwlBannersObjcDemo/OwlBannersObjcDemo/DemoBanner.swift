@@ -1,10 +1,4 @@
-//
-//  DemoBanner.swift
-//  OwlBannersObjcDemo
-//
-//  Created by Brett Stover on 2015-12-04.
 //  Copyright © 2015 Hootsuite. All rights reserved.
-//
 
 import Foundation
 import OwlBanners
