@@ -97,10 +97,8 @@ open class Banner: NSObject {
         return "\(type(of: style)).\(style): \(title)"
     }
 
-    fileprivate var keyWindow: UIWindow {
-        let keyWindow = UIApplication.shared.keyWindow
-        assert(keyWindow != nil, "Attempted to display banner without a key window. Hint: Ensure enqueue is called after the view loads.")
-        return keyWindow!
+    fileprivate var keyWindow: UIWindow? {
+        return UIApplication.shared.keyWindow
     }
 
     fileprivate var topConstraint: NSLayoutConstraint?
@@ -165,6 +163,9 @@ open class Banner: NSObject {
     // MARK: Private Functions
 
     fileprivate func setup() {
+        guard let keyWindow = keyWindow else {
+            return
+        }
         keyWindow.addSubview(bannerView)
         bannerView.translatesAutoresizingMaskIntoConstraints = false
 
