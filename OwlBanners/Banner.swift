@@ -85,6 +85,10 @@ open class Banner: NSObject {
     /// Determines whether the banner requires the user to dismiss it.
     open var requiresUserDismissal = false
 
+    /// Application proxy that enables the access to required `UIApplication` methods and properties. It used instead of
+    /// directly accessing the `UIApplication.shared` to be able to use the framework in app extensions.
+    static open var application: ApplicationContext?
+
     // MARK: Private Properties
 
     fileprivate let style: BannerStyle
@@ -98,7 +102,7 @@ open class Banner: NSObject {
     }
 
     fileprivate var keyWindow: UIWindow? {
-        return UIApplication.shared.keyWindow
+        return Banner.application?.keyWindow
     }
 
     fileprivate var topConstraint: NSLayoutConstraint?
@@ -108,7 +112,12 @@ open class Banner: NSObject {
     }
 
     fileprivate var topConstraintConstantWhenDisplayed: CGFloat {
-        return -style.bannerConfiguration.bufferHeight + UIApplication.shared.statusBarFrame.size.height
+        guard let application = Banner.application else {
+            printApplicationError()
+            return -style.bannerConfiguration.bufferHeight
+        }
+
+        return -style.bannerConfiguration.bufferHeight + application.statusBarFrame.size.height
     }
 
     // MARK: Initializers
@@ -166,6 +175,7 @@ open class Banner: NSObject {
         guard let keyWindow = keyWindow else {
             return
         }
+
         keyWindow.addSubview(bannerView)
         bannerView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -195,9 +205,11 @@ open class Banner: NSObject {
     fileprivate func present() {
         bannerView.superview?.layoutIfNeeded()
 
-        currentStatusBarStyle = UIApplication.shared.statusBarStyle
-        if let statusBarStyle = style.bannerConfiguration.preferredStatusBarStyle {
-            UIApplication.shared.statusBarStyle = statusBarStyle
+        if let statusBarStyle = Banner.application?.statusBarStyle {
+            currentStatusBarStyle = statusBarStyle
+            if let preferredStatusBarStyle = style.bannerConfiguration.preferredStatusBarStyle {
+                Banner.application?.statusBarStyle = preferredStatusBarStyle
+            }
         }
 
         UIView.animate(withDuration: displayMetrics.presentDuration, delay: 0, usingSpringWithDamping: Constants.presentAnimationDamping,
@@ -229,7 +241,7 @@ open class Banner: NSObject {
             return
         }
         isDismissing = true
-        UIApplication.shared.statusBarStyle = currentStatusBarStyle
+        Banner.application?.statusBarStyle = currentStatusBarStyle
 
         UIView.animate(withDuration: displayMetrics.dismissDuration, delay: 0, usingSpringWithDamping: Constants.dismissAnimationDamping,
             initialSpringVelocity: Constants.dismissAnimationVelocity,
@@ -250,6 +262,10 @@ open class Banner: NSObject {
         }
 
         return false
+    }
+
+    fileprivate func printApplicationError() {
+        print("Error - Application not found. Make sure you set `Banner.application` property before presenting a banner.")
     }
 
     // MARK: User Actions

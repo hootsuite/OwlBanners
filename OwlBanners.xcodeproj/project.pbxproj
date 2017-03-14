@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A09D91D41E7775A800FA27F3 /* ApplicationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09D91D31E7775A800FA27F3 /* ApplicationContext.swift */; };
 		A88E55E41DE3B66F00DA5F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88E55E31DE3B66F00DA5F42 /* Assets.xcassets */; };
 		AF6DE9821BC70D2A0001598E /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DE97F1BC70D2A0001598E /* Banner.swift */; };
 		AF6DE9831BC70D2A0001598E /* DefaultBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DE9801BC70D2A0001598E /* DefaultBannerView.swift */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A09D91D31E7775A800FA27F3 /* ApplicationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationContext.swift; sourceTree = "<group>"; };
 		A88E55E31DE3B66F00DA5F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8B767881E5B999F006A2670 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		A8B767891E5B999F006A2670 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		AF6DE9351BC70CB40001598E /* OwlBanners */ = {
 			isa = PBXGroup;
 			children = (
+				A09D91D31E7775A800FA27F3 /* ApplicationContext.swift */,
 				AF6DE97F1BC70D2A0001598E /* Banner.swift */,
 				AF6DE9801BC70D2A0001598E /* DefaultBannerView.swift */,
 				AF6DE9811BC70D2A0001598E /* DefaultBannerView.xib */,
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A09D91D41E7775A800FA27F3 /* ApplicationContext.swift in Sources */,
 				AF6DE9831BC70D2A0001598E /* DefaultBannerView.swift in Sources */,
 				AF6DE9821BC70D2A0001598E /* Banner.swift in Sources */,
 			);
@@ -269,6 +273,7 @@
 		AF6DE93C1BC70CB40001598E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -290,6 +295,7 @@
 		AF6DE93D1BC70CB40001598E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
