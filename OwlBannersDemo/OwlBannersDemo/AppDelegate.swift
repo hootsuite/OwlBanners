@@ -6,6 +6,7 @@
 // tree.
 
 import UIKit
+import OwlBanners
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Banner.application = UIApplication.shared
         return true
     }
 }
+
+extension UIApplication: ApplicationContext {}
