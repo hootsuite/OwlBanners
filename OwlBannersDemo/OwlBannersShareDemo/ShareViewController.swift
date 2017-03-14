@@ -1,10 +1,9 @@
+// Copyright 2017 HootSuite Media Inc.
 //
-//  ShareViewController.swift
-//  OwlBannersShareDemo
-//
-//  Created by Artem Goryaev on 2017-03-14.
-//  Copyright © 2017 Hootsuite. All rights reserved.
-//
+// This file is part of OwlBanners. The full OwlBanners copyright notice,
+// including terms governing use, modification, and redistribution, is
+// contained in the file LICENSE.md at the root of the source code distribution
+// tree.
 
 import UIKit
 import Social
