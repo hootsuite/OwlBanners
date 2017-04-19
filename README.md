@@ -2,7 +2,7 @@
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-lightgrey.svg)](https://raw.githubusercontent.com/Carthage/Carthage/master/LICENSE.md)
 [![GitHub release](https://img.shields.io/github/release/carthage/carthage.svg)](https://github.com/Carthage/Carthage/releases)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/Alamofire.svg)](https://img.shields.io/cocoapods/v/Alamofire.svg) 
+[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/Alamofire.svg)](https://img.shields.io/cocoapods/v/Alamofire.svg)
 
 OwlBanners is a simple Swift framework for displaying custom banners.
 
@@ -33,7 +33,7 @@ See the two demo projects provided (OwlBannersDemo and OwlBannersObjcDemo) for e
 
 ## Installation
 
-OwlBanners can be installed using either [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://cocoapods.org/). 
+OwlBanners can be installed using either [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://cocoapods.org/).
 
 ### Carthage
 
@@ -57,6 +57,22 @@ Second, install OwlBanners into your project:
 pod install
 ```
 
+## Initialization
+
+OwlBanners requires access to the currently displayed `UIWindow` as well as some additional information about the app's UI. All these requirements are stated in a protocol named `ApplicationContext`.
+A very convenient way to hook up all these requirements is to simply make your `UIApplication` conform to `ApplicationContext` since it already provides everything necessary for `ApplicationContext`.
+```
+extension UIApplication: ApplicationContext {}
+```
+Once that is done you can initialize OwlBanners in your `AppDelegate`:
+```
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+    // Your setup code here
+
+    Banner.application = UIApplication.shared
+}
+```
 ## Usage
 
 OwlBanners provides several default banners and allows for the addition of custom banners. Banners are backed by UIView objects which conform to the BannerView protocol and are grouped by "banner styles" represented as structs conforming to the BannerStyle protocol.
@@ -124,11 +140,11 @@ BannerConfiguration(bannerView: DefaultBannerView.bannerView(.greenColor()), buf
 When the preferred status bar style is set on the configuration, the status bar style will be switched to the preferred stylye while the banner is displayed and then will be reset to its original style when the banner is dismissed. This requires "View controller-based status bar appearance" to be set to NO in your app's Info.plist file.
 
 ```
-<key>UIViewControllerBasedStatusBarAppearance</key> 
+<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 ```
 
-The default display metrics define the timing of the banners with a given configuration unless otherwise overriden directly on the Banner object. The display metrics struct defines presentation, display and dismissal durations. If not supplied, the banner will use sensible defaults. 
+The default display metrics define the timing of the banners with a given configuration unless otherwise overriden directly on the Banner object. The display metrics struct defines presentation, display and dismissal durations. If not supplied, the banner will use sensible defaults.
 
 For example, if BannerDisplayMetrics(1.0, 2.0, 3.0) was supplied as display metrics to the configuration returned for a .Success case on a banner style called MyStyle, then all banners created with Banner(MyStyle.Success, title: "My title") would take 1 second to present, 2 to display on screen, and 3 to dismiss. If desired, this could then be overridden a per banner case using:
 
@@ -153,7 +169,7 @@ This buffer zone serves two important purposes:
 1. The status bar may change size during your app's usage (e.g., due to an incoming call). The buffer zone is partially displayed behind the status bar and allows for your content to always display below the status bar (i.e., the buffer zone prevents your banner's content from being covered up by the status bar).
 2. When the banner drops down, it will drop slightly past it's destination point and then bounce back to the correct position. This is part of the spring animation used for displaying banners. Without a buffer zone, an unsightly gap would be shown above the banner during this animation.
 
-The bufferHeight parameter supplied to the BannerConfiguration is the height of this buffer zone. The actual content of the banner should not be displayed in the buffer zone. The buffer zone will be displayed under the status bar and will extend partially off screen for the reasons given above. 
+The bufferHeight parameter supplied to the BannerConfiguration is the height of this buffer zone. The actual content of the banner should not be displayed in the buffer zone. The buffer zone will be displayed under the status bar and will extend partially off screen for the reasons given above.
 
 In practice, a buffer zone of 100px or greater should suffice, but you should test the display of banners while with the device is stationary, with an incoming call, and during rotation to ensure the buffer zone is large enough as the height of your banner and the supplied display metrics may affect the height of buffer needed.
 
