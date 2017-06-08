@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+# Don't lint when building for Carthage
+exit 0 unless ENV['CARTHAGE'].nil?
+
+unless system("which swiftlint > /dev/null 2>&1")
+  print "error: SwiftLint not installed, please run brew install swiftlint"
+  exit 1
+end
+
+MIN_VERSION = '0.18.0'.freeze
+version = `swiftlint version`.strip
+if Gem::Version.new(version) < Gem::Version.new(MIN_VERSION)
+  print "error: please update to SwiftLint version #{MIN_VERSION} (currently on #{version})"
+  exit 1
+end
+
+if File.exist?('.swiftlint.yml')
+  system("swiftlint --config .swiftlint.yml --strict") or exit 1
+else
+  system("swiftlint") or exit 1
+end
+
+system("touch $SOURCE_ROOT/.swiftlint.last") unless ENV['SOURCE_ROOT'].nil?

@@ -155,12 +155,12 @@ open class Banner: NSObject {
     open func enqueue() {
         if !bannerIsDuplicateOfLastItemInDisplayQueue() {
             let operation = BlockOperation(block: {
-                let _ = Banner.displayBeginSemaphore.wait(timeout: DispatchTime.distantFuture)
+                _ = Banner.displayBeginSemaphore.wait(timeout: DispatchTime.distantFuture)
                 DispatchQueue.main.async(execute: {
                     self.setup()
                     self.present()
                 })
-                let _ = Banner.displayEndSemaphore.wait(timeout: DispatchTime.distantFuture)
+                _ = Banner.displayEndSemaphore.wait(timeout: DispatchTime.distantFuture)
             })
 
             operation.name = dupeKey

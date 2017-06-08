@@ -151,13 +151,15 @@
 			files = (
 			);
 			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(PRODUCT_NAME).framework",
 			);
 			name = "Run SwiftLint";
 			outputPaths = (
+				"$(SOURCE_ROOT)/.swiftlint.last",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "${SRCROOT}/bin/lint";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
