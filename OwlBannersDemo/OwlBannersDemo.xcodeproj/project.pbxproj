@@ -507,6 +507,7 @@
 				A09D91E61E78653400FA27F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF6DE9421BC70CD00001598E /* Build configuration list for PBXProject "OwlBannersDemo" */ = {
 			isa = XCConfigurationList;
