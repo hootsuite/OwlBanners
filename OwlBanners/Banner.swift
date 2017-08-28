@@ -77,10 +77,10 @@ open class Banner: NSObject {
     open var displayMetrics = BannerDisplayMetrics(0.5, 2.0, 0.25)
 
     /// The action to invoke when the banner is dismissed.
-    open var userDismissalAction: (() -> Void)?
+    @objc open var userDismissalAction: (() -> Void)?
 
     /// The action to invoke when the banner times out.
-    open var completionAction:(() -> Void)?
+    @objc open var completionAction:(() -> Void)?
 
     /// Determines whether the banner requires the user to dismiss it.
     open var requiresUserDismissal = false
@@ -152,7 +152,7 @@ open class Banner: NSObject {
     // MARK: Public Functions
 
     /// Adds `self` to the queue of banners to display.
-    open func enqueue() {
+    @objc open func enqueue() {
         if !bannerIsDuplicateOfLastItemInDisplayQueue() {
             let operation = BlockOperation(block: {
                 _ = Banner.displayBeginSemaphore.wait(timeout: DispatchTime.distantFuture)
