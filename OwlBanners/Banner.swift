@@ -14,7 +14,7 @@ public protocol BannerStyle {
 }
 
 /// Things that have a title.
-public protocol BannerView {
+@objc public protocol BannerView {
     /// The banner's display title.
     var title: String { get set }
 }
@@ -50,7 +50,7 @@ public struct BannerDisplayMetrics {
 }
 
 /// Banner model object.
-open class Banner: NSObject {
+@objc open class Banner: NSObject {
 
     // Constants
 
@@ -77,17 +77,17 @@ open class Banner: NSObject {
     open var displayMetrics = BannerDisplayMetrics(0.5, 2.0, 0.25)
 
     /// The action to invoke when the banner is dismissed.
-    open var userDismissalAction: (() -> Void)?
+    @objc open var userDismissalAction: (() -> Void)?
 
     /// The action to invoke when the banner times out.
-    open var completionAction:(() -> Void)?
+    @objc open var completionAction:(() -> Void)?
 
     /// Determines whether the banner requires the user to dismiss it.
-    open var requiresUserDismissal = false
+    @objc open var requiresUserDismissal = false
 
     /// Application proxy that enables the access to required `UIApplication` methods and properties. It used instead of
     /// directly accessing the `UIApplication.shared` to be able to use the framework in app extensions.
-    static open var application: ApplicationContext?
+    @objc static open var application: ApplicationContext?
 
     // MARK: Private Properties
 
@@ -152,7 +152,7 @@ open class Banner: NSObject {
     // MARK: Public Functions
 
     /// Adds `self` to the queue of banners to display.
-    open func enqueue() {
+    @objc open func enqueue() {
         if !bannerIsDuplicateOfLastItemInDisplayQueue() {
             let operation = BlockOperation(block: {
                 _ = Banner.displayBeginSemaphore.wait(timeout: DispatchTime.distantFuture)
@@ -183,7 +183,7 @@ open class Banner: NSObject {
         topConstraint = NSLayoutConstraint(item: bannerView, attribute: .top, relatedBy: .equal, toItem: keyWindow, attribute: .top, multiplier: 1.0, constant: topConstraintConstantWhenHidden)
         NSLayoutConstraint.activate(horizontalConstraints + [topConstraint!])
 
-        if var bannerView = bannerView as? BannerView {
+        if let bannerView = bannerView as? BannerView {
             bannerView.title = title
         }
 
