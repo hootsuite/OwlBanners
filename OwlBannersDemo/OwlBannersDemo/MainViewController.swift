@@ -35,7 +35,7 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func showSuccessBannerWithCustomTiming(_ sender: AnyObject) {
-        let banner = Banner(DefaultBannerStyle.success, title:"Slooooooow but good.")
+        let banner = Banner(DefaultBannerStyle.success, title: "Slooooooow but good.")
         banner.displayMetrics = BannerDisplayMetrics(2, 4, 2)
         banner.enqueue()
     }
