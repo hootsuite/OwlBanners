@@ -24,8 +24,8 @@ OwlBanners has been developed for use in the Hootsuite iOS app.
 
 ## Requirements
 
-- iOS 8.0+ (OwlBannersDemo demo project requires iOS 9.0+)
-- Xcode 7.3+
+- iOS 10.3+
+- Xcode 8.3+
 
 ## Demo Projects
 
@@ -39,7 +39,7 @@ OwlBanners can be installed using either [Carthage](https://github.com/Carthage/
 
 To integrate OwlBanners into your Xcode project using Carthage, specify it in your Cartfile:
 
-```
+```swift
 github "hootsuite/OwlBanners"
 ```
 
@@ -47,7 +47,7 @@ github "hootsuite/OwlBanners"
 
 First, add the following line to your Podfile:
 
-```
+```swift
 pod 'OwlBanners'
 ```
 
@@ -61,11 +61,11 @@ pod install
 
 OwlBanners requires access to the currently displayed `UIWindow` as well as some additional information about the app's UI. All these requirements are stated in a protocol named `ApplicationContext`.
 A very convenient way to hook up all these requirements is to simply make your `UIApplication` conform to `ApplicationContext` since it already provides everything necessary for `ApplicationContext`.
-```
+```swift
 extension UIApplication: ApplicationContext {}
 ```
 Once that is done you can initialize OwlBanners in your `AppDelegate`:
-```
+```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
     // Your setup code here
@@ -83,13 +83,13 @@ A default banner style is provided which allows for displaying simple success, w
 
 Banners are easily created by supplying a banner style and a title to the Banner intializer. For example, we can create the default success banner as follows:
 
-```
+```swift
 let banner = Banner(DefaultBannerStyle.Success, title: "My first banner!")
 ```
 
 Displaying a banner is as simple as calling the enqueue() method on a banner object.
 
-```
+```swift
 banner.enqueue()
 ```
 
@@ -107,7 +107,7 @@ To create a custom banner you must provide a UIView that implements the BannerVi
 
 The BannerView protocol is defined as:
 
-```
+```swift
 public protocol BannerView {
     var title: String { get set }
 }
@@ -121,7 +121,7 @@ Note that if your banner does not display a textual title, you do not strictly n
 
 The BannerStyle protocol is defined as:
 
-```
+```swift
 public protocol BannerStyle {
     var bannerConfiguration: BannerConfiguration { get }
 }
@@ -133,7 +133,7 @@ To setup a banner style, you create a struct with as many cases as desired and t
 
 The BannerConfiguration initializer takes two mandatory and three optional parameters. These include the view implementing BannerView, a bufferHeight (discussed in the next session), the preferred status bar style, the default display metrics to be used, and the default setting for requiring user dismissal.
 
-```
+```swift
 BannerConfiguration(bannerView: DefaultBannerView.bannerView(.greenColor()), bufferHeight: 100.0)
 ```
 
@@ -148,14 +148,14 @@ The default display metrics define the timing of the banners with a given config
 
 For example, if BannerDisplayMetrics(1.0, 2.0, 3.0) was supplied as display metrics to the configuration returned for a .Success case on a banner style called MyStyle, then all banners created with Banner(MyStyle.Success, title: "My title") would take 1 second to present, 2 to display on screen, and 3 to dismiss. If desired, this could then be overridden a per banner case using:
 
-```
+```swift
 let slowBanner = Banner(MyStyle.Success, title: "Slow")
 slowBanner.displayMetrics = BannerDisplayMetrics(5, 5, 5)
 ```
 
 The default requires user dismissal parameter defines if the banners for a given case within a style require user dismissal. If not supplied, this defaults to false. Again, if set, this can be overriden on a per case basis using:
 
-```
+```swift
 let banner = Banner(MyStyle.Success, title: "Dismiss me!")
 banner.requiresUserDismissal = true
 ```
@@ -179,7 +179,7 @@ See DogBannerView.swift and AnimalBannerStyle.swift in the OwlBannersDemo projec
 
 Displaying a custom banner works the same as displaying a default banner. Banner's of any banner style can be intermixed as appropriate and will display as part of the same queue.
 
-```
+```swift
 Banner(CustomBannerStyle.Success, title: "My first custom success banner!").enqueue()
 Banner(DefaultBannerStyle.Success, title: "Another default success banner!").enqueue()
 Banner(CustomBannerStyle.Success, title: "Another custom success banner!").enqueue()
@@ -194,7 +194,7 @@ This is done by writing the banner customization code in Swift and then providin
 
 This wrapper may look something like:
 
-```    
+```swift    
 class DemoBanner: Banner {
     static func successBanner(title: String) -> DemoBanner {
         return DemoBanner(DemoBannerStyle.Success, title: title)
