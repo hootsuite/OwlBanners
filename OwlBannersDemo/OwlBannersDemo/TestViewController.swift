@@ -7,6 +7,8 @@
 
 import UIKit
 
+//swiftlint:disable line_length
+
 class TestViewController: UIViewController {
 
     override func viewDidLoad() {
