@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 import OwlBanners
 
+//swiftlint:disable force_cast
+
 enum AnimalBannerStyle: BannerStyle {
     case cat, dog
 
