@@ -7,26 +7,117 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A09D91D41E7775A800FA27F3 /* ApplicationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09D91D31E7775A800FA27F3 /* ApplicationContext.swift */; };
-		A88E55E41DE3B66F00DA5F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88E55E31DE3B66F00DA5F42 /* Assets.xcassets */; };
-		AF6DE9821BC70D2A0001598E /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DE97F1BC70D2A0001598E /* Banner.swift */; };
-		AF6DE9831BC70D2A0001598E /* DefaultBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DE9801BC70D2A0001598E /* DefaultBannerView.swift */; };
-		AF6DE9841BC70D2A0001598E /* DefaultBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6DE9811BC70D2A0001598E /* DefaultBannerView.xib */; };
+		51B584B71FB22560000DF8EC /* ApplicationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B584991FB22560000DF8EC /* ApplicationContext.swift */; };
+		51B584B81FB22560000DF8EC /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5849A1FB22560000DF8EC /* Banner.swift */; };
+		51B584B91FB22560000DF8EC /* DefaultBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5849B1FB22560000DF8EC /* DefaultBannerView.swift */; };
+		51B584BA1FB22560000DF8EC /* OwlBanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 51B5849C1FB22560000DF8EC /* OwlBanners.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51B584C41FB22560000DF8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B584AC1FB22560000DF8EC /* Assets.xcassets */; };
+		51B584C51FB22560000DF8EC /* DefaultBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B584AD1FB22560000DF8EC /* DefaultBannerView.xib */; };
+		51B584E21FB22661000DF8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B584AF1FB22560000DF8EC /* Assets.xcassets */; };
+		51B584E31FB22665000DF8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B584B01FB22560000DF8EC /* LaunchScreen.storyboard */; };
+		51B584E51FB2266B000DF8EC /* CatBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B584B41FB22560000DF8EC /* CatBannerView.xib */; };
+		51B584E61FB2266B000DF8EC /* DogBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B584B51FB22560000DF8EC /* DogBannerView.xib */; };
+		51B584E71FB2266E000DF8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B584B61FB22560000DF8EC /* Main.storyboard */; };
+		51B584E81FB22672000DF8EC /* AnimalBannerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5849E1FB22560000DF8EC /* AnimalBannerStyle.swift */; };
+		51B584E91FB22672000DF8EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5849F1FB22560000DF8EC /* AppDelegate.swift */; };
+		51B584EA1FB22672000DF8EC /* DogBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B584A01FB22560000DF8EC /* DogBannerView.swift */; };
+		51B584EB1FB22672000DF8EC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B584A11FB22560000DF8EC /* MainViewController.swift */; };
+		51B584ED1FB22672000DF8EC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B584A31FB22560000DF8EC /* TestViewController.swift */; };
+		51B584EE1FB226CA000DF8EC /* OwlBanners.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6DE9331BC70CB40001598E /* OwlBanners.framework */; };
+		51B584EF1FB226CA000DF8EC /* OwlBanners.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF6DE9331BC70CB40001598E /* OwlBanners.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51B585021FB22778000DF8EC /* OwlBannerShareDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51B584F81FB22778000DF8EC /* OwlBannerShareDemo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		51B5850A1FB22809000DF8EC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B585081FB22809000DF8EC /* MainInterface.storyboard */; };
+		51B5850F1FB22831000DF8EC /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5850E1FB22831000DF8EC /* ShareViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		51B584F01FB226CA000DF8EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6DE92A1BC70CB40001598E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF6DE9321BC70CB40001598E;
+			remoteInfo = OwlBanners;
+		};
+		51B585001FB22778000DF8EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6DE92A1BC70CB40001598E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51B584F71FB22778000DF8EC;
+			remoteInfo = OwlBannerShareDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51B584F21FB226CA000DF8EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				51B584EF1FB226CA000DF8EC /* OwlBanners.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B585061FB22778000DF8EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				51B585021FB22778000DF8EC /* OwlBannerShareDemo.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A09D91D31E7775A800FA27F3 /* ApplicationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationContext.swift; sourceTree = "<group>"; };
-		A88E55E31DE3B66F00DA5F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51B584991FB22560000DF8EC /* ApplicationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationContext.swift; sourceTree = "<group>"; };
+		51B5849A1FB22560000DF8EC /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		51B5849B1FB22560000DF8EC /* DefaultBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultBannerView.swift; sourceTree = "<group>"; };
+		51B5849C1FB22560000DF8EC /* OwlBanners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwlBanners.h; sourceTree = "<group>"; };
+		51B5849E1FB22560000DF8EC /* AnimalBannerStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalBannerStyle.swift; sourceTree = "<group>"; };
+		51B5849F1FB22560000DF8EC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51B584A01FB22560000DF8EC /* DogBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogBannerView.swift; sourceTree = "<group>"; };
+		51B584A11FB22560000DF8EC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		51B584A31FB22560000DF8EC /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		51B584A41FB22560000DF8EC /* OwlBanners.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OwlBanners.podspec; sourceTree = "<group>"; };
+		51B584A71FB22560000DF8EC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B584AC1FB22560000DF8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51B584AD1FB22560000DF8EC /* DefaultBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultBannerView.xib; sourceTree = "<group>"; };
+		51B584AF1FB22560000DF8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51B584B11FB22560000DF8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		51B584B41FB22560000DF8EC /* CatBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatBannerView.xib; sourceTree = "<group>"; };
+		51B584B51FB22560000DF8EC /* DogBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogBannerView.xib; sourceTree = "<group>"; };
+		51B584B61FB22560000DF8EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		51B584D01FB22616000DF8EC /* OwlBannersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwlBannersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B584DE1FB22617000DF8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B584F81FB22778000DF8EC /* OwlBannerShareDemo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OwlBannerShareDemo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B585091FB22809000DF8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		51B5850C1FB22817000DF8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B5850E1FB22831000DF8EC /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		A8B767881E5B999F006A2670 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		A8B767891E5B999F006A2670 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AF6DE9331BC70CB40001598E /* OwlBanners.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OwlBanners.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF6DE9381BC70CB40001598E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF6DE97F1BC70D2A0001598E /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
-		AF6DE9801BC70D2A0001598E /* DefaultBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultBannerView.swift; sourceTree = "<group>"; };
-		AF6DE9811BC70D2A0001598E /* DefaultBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultBannerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		51B584CD1FB22616000DF8EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B584EE1FB226CA000DF8EC /* OwlBanners.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B584F51FB22778000DF8EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF6DE92F1BC70CB40001598E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,12 +128,129 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51B584971FB22560000DF8EC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				51B584981FB22560000DF8EC /* OwlBanners */,
+				51B5849D1FB22560000DF8EC /* OwlBannersDemo */,
+				51B5850D1FB22831000DF8EC /* OwlBannersShareDemo */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		51B584981FB22560000DF8EC /* OwlBanners */ = {
+			isa = PBXGroup;
+			children = (
+				51B5849C1FB22560000DF8EC /* OwlBanners.h */,
+				51B584991FB22560000DF8EC /* ApplicationContext.swift */,
+				51B5849A1FB22560000DF8EC /* Banner.swift */,
+				51B5849B1FB22560000DF8EC /* DefaultBannerView.swift */,
+			);
+			path = OwlBanners;
+			sourceTree = "<group>";
+		};
+		51B5849D1FB22560000DF8EC /* OwlBannersDemo */ = {
+			isa = PBXGroup;
+			children = (
+				51B5849E1FB22560000DF8EC /* AnimalBannerStyle.swift */,
+				51B5849F1FB22560000DF8EC /* AppDelegate.swift */,
+				51B584A01FB22560000DF8EC /* DogBannerView.swift */,
+				51B584A11FB22560000DF8EC /* MainViewController.swift */,
+				51B584A31FB22560000DF8EC /* TestViewController.swift */,
+			);
+			path = OwlBannersDemo;
+			sourceTree = "<group>";
+		};
+		51B584A51FB22560000DF8EC /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				51B584A61FB22560000DF8EC /* OwlBanners */,
+				51B584A81FB22560000DF8EC /* OwlBannersDemo */,
+				51B5850B1FB22817000DF8EC /* OwlBannersShareDemo */,
+			);
+			path = Metadata;
+			sourceTree = "<group>";
+		};
+		51B584A61FB22560000DF8EC /* OwlBanners */ = {
+			isa = PBXGroup;
+			children = (
+				51B584A71FB22560000DF8EC /* Info.plist */,
+			);
+			path = OwlBanners;
+			sourceTree = "<group>";
+		};
+		51B584A81FB22560000DF8EC /* OwlBannersDemo */ = {
+			isa = PBXGroup;
+			children = (
+				51B584DE1FB22617000DF8EC /* Info.plist */,
+			);
+			path = OwlBannersDemo;
+			sourceTree = "<group>";
+		};
+		51B584AA1FB22560000DF8EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51B584AB1FB22560000DF8EC /* OwlBanners */,
+				51B584AE1FB22560000DF8EC /* OwlBannersDemo */,
+				51B585071FB22809000DF8EC /* OwlBannersShareDemo */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		51B584AB1FB22560000DF8EC /* OwlBanners */ = {
+			isa = PBXGroup;
+			children = (
+				51B584AC1FB22560000DF8EC /* Assets.xcassets */,
+				51B584AD1FB22560000DF8EC /* DefaultBannerView.xib */,
+			);
+			path = OwlBanners;
+			sourceTree = "<group>";
+		};
+		51B584AE1FB22560000DF8EC /* OwlBannersDemo */ = {
+			isa = PBXGroup;
+			children = (
+				51B584AF1FB22560000DF8EC /* Assets.xcassets */,
+				51B584B41FB22560000DF8EC /* CatBannerView.xib */,
+				51B584B51FB22560000DF8EC /* DogBannerView.xib */,
+				51B584B01FB22560000DF8EC /* LaunchScreen.storyboard */,
+				51B584B61FB22560000DF8EC /* Main.storyboard */,
+			);
+			path = OwlBannersDemo;
+			sourceTree = "<group>";
+		};
+		51B585071FB22809000DF8EC /* OwlBannersShareDemo */ = {
+			isa = PBXGroup;
+			children = (
+				51B585081FB22809000DF8EC /* MainInterface.storyboard */,
+			);
+			path = OwlBannersShareDemo;
+			sourceTree = "<group>";
+		};
+		51B5850B1FB22817000DF8EC /* OwlBannersShareDemo */ = {
+			isa = PBXGroup;
+			children = (
+				51B5850C1FB22817000DF8EC /* Info.plist */,
+			);
+			path = OwlBannersShareDemo;
+			sourceTree = "<group>";
+		};
+		51B5850D1FB22831000DF8EC /* OwlBannersShareDemo */ = {
+			isa = PBXGroup;
+			children = (
+				51B5850E1FB22831000DF8EC /* ShareViewController.swift */,
+			);
+			path = OwlBannersShareDemo;
+			sourceTree = "<group>";
+		};
 		AF6DE9291BC70CB40001598E = {
 			isa = PBXGroup;
 			children = (
-				A8B767881E5B999F006A2670 /* LICENSE.md */,
 				A8B767891E5B999F006A2670 /* README.md */,
-				AF6DE9351BC70CB40001598E /* OwlBanners */,
+				A8B767881E5B999F006A2670 /* LICENSE.md */,
+				51B584A41FB22560000DF8EC /* OwlBanners.podspec */,
+				51B584A51FB22560000DF8EC /* Metadata */,
+				51B584AA1FB22560000DF8EC /* Resources */,
+				51B584971FB22560000DF8EC /* Sources */,
 				AF6DE9341BC70CB40001598E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,21 +259,10 @@
 			isa = PBXGroup;
 			children = (
 				AF6DE9331BC70CB40001598E /* OwlBanners.framework */,
+				51B584D01FB22616000DF8EC /* OwlBannersDemo.app */,
+				51B584F81FB22778000DF8EC /* OwlBannerShareDemo.appex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AF6DE9351BC70CB40001598E /* OwlBanners */ = {
-			isa = PBXGroup;
-			children = (
-				A09D91D31E7775A800FA27F3 /* ApplicationContext.swift */,
-				AF6DE97F1BC70D2A0001598E /* Banner.swift */,
-				AF6DE9801BC70D2A0001598E /* DefaultBannerView.swift */,
-				AF6DE9811BC70D2A0001598E /* DefaultBannerView.xib */,
-				AF6DE9381BC70CB40001598E /* Info.plist */,
-				A88E55E31DE3B66F00DA5F42 /* Assets.xcassets */,
-			);
-			path = OwlBanners;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,12 +272,51 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B584BA1FB22560000DF8EC /* OwlBanners.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		51B584CF1FB22616000DF8EC /* OwlBannersDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51B584DF1FB22617000DF8EC /* Build configuration list for PBXNativeTarget "OwlBannersDemo" */;
+			buildPhases = (
+				51B584CC1FB22616000DF8EC /* Sources */,
+				51B584CD1FB22616000DF8EC /* Frameworks */,
+				51B584CE1FB22616000DF8EC /* Resources */,
+				51B584F21FB226CA000DF8EC /* Embed Frameworks */,
+				51B585061FB22778000DF8EC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51B584F11FB226CA000DF8EC /* PBXTargetDependency */,
+				51B585011FB22778000DF8EC /* PBXTargetDependency */,
+			);
+			name = OwlBannersDemo;
+			productName = OwlBannersDemo;
+			productReference = 51B584D01FB22616000DF8EC /* OwlBannersDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		51B584F71FB22778000DF8EC /* OwlBannerShareDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51B585031FB22778000DF8EC /* Build configuration list for PBXNativeTarget "OwlBannerShareDemo" */;
+			buildPhases = (
+				51B584F41FB22778000DF8EC /* Sources */,
+				51B584F51FB22778000DF8EC /* Frameworks */,
+				51B584F61FB22778000DF8EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OwlBannerShareDemo;
+			productName = OwlBannerShareDemo;
+			productReference = 51B584F81FB22778000DF8EC /* OwlBannerShareDemo.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		AF6DE9321BC70CB40001598E /* OwlBanners */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF6DE93B1BC70CB40001598E /* Build configuration list for PBXNativeTarget "OwlBanners" */;
@@ -106,9 +342,18 @@
 		AF6DE92A1BC70CB40001598E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Hootsuite;
 				TargetAttributes = {
+					51B584CF1FB22616000DF8EC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					51B584F71FB22778000DF8EC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					AF6DE9321BC70CB40001598E = {
 						CreatedOnToolsVersion = 7.1;
 						LastSwiftMigration = 0900;
@@ -121,6 +366,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = AF6DE9291BC70CB40001598E;
 			productRefGroup = AF6DE9341BC70CB40001598E /* Products */;
@@ -128,17 +374,39 @@
 			projectRoot = "";
 			targets = (
 				AF6DE9321BC70CB40001598E /* OwlBanners */,
+				51B584CF1FB22616000DF8EC /* OwlBannersDemo */,
+				51B584F71FB22778000DF8EC /* OwlBannerShareDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		51B584CE1FB22616000DF8EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B584E21FB22661000DF8EC /* Assets.xcassets in Resources */,
+				51B584E31FB22665000DF8EC /* LaunchScreen.storyboard in Resources */,
+				51B584E71FB2266E000DF8EC /* Main.storyboard in Resources */,
+				51B584E51FB2266B000DF8EC /* CatBannerView.xib in Resources */,
+				51B584E61FB2266B000DF8EC /* DogBannerView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B584F61FB22778000DF8EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B5850A1FB22809000DF8EC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF6DE9311BC70CB40001598E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A88E55E41DE3B66F00DA5F42 /* Assets.xcassets in Resources */,
-				AF6DE9841BC70D2A0001598E /* DefaultBannerView.xib in Resources */,
+				51B584C51FB22560000DF8EC /* DefaultBannerView.xib in Resources */,
+				51B584C41FB22560000DF8EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,19 +433,159 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		51B584CC1FB22616000DF8EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B584E91FB22672000DF8EC /* AppDelegate.swift in Sources */,
+				51B584EA1FB22672000DF8EC /* DogBannerView.swift in Sources */,
+				51B584E81FB22672000DF8EC /* AnimalBannerStyle.swift in Sources */,
+				51B584ED1FB22672000DF8EC /* TestViewController.swift in Sources */,
+				51B584EB1FB22672000DF8EC /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B584F41FB22778000DF8EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B5850F1FB22831000DF8EC /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF6DE92E1BC70CB40001598E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A09D91D41E7775A800FA27F3 /* ApplicationContext.swift in Sources */,
-				AF6DE9831BC70D2A0001598E /* DefaultBannerView.swift in Sources */,
-				AF6DE9821BC70D2A0001598E /* Banner.swift in Sources */,
+				51B584B71FB22560000DF8EC /* ApplicationContext.swift in Sources */,
+				51B584B81FB22560000DF8EC /* Banner.swift in Sources */,
+				51B584B91FB22560000DF8EC /* DefaultBannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		51B584F11FB226CA000DF8EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF6DE9321BC70CB40001598E /* OwlBanners */;
+			targetProxy = 51B584F01FB226CA000DF8EC /* PBXContainerItemProxy */;
+		};
+		51B585011FB22778000DF8EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51B584F71FB22778000DF8EC /* OwlBannerShareDemo */;
+			targetProxy = 51B585001FB22778000DF8EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		51B584B01FB22560000DF8EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51B584B11FB22560000DF8EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		51B585081FB22809000DF8EC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51B585091FB22809000DF8EC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		51B584E01FB22617000DF8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Metadata/OwlBannersDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hootsuite.OwlBannersDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51B584E11FB22617000DF8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Metadata/OwlBannersDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hootsuite.OwlBannersDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		51B585041FB22778000DF8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Metadata/OwlBannersShareDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hootsuite.OwlBannersDemo.OwlBannerShareDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51B585051FB22778000DF8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Metadata/OwlBannersShareDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hootsuite.OwlBannersDemo.OwlBannerShareDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		AF6DE9391BC70CB40001598E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -228,6 +636,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -277,6 +687,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -288,21 +700,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OwlBanners/Info.plist;
+				INFOPLIST_FILE = Metadata/OwlBanners/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hootsuite.com.OwlBanners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
 				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
@@ -311,21 +722,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OwlBanners/Info.plist;
+				INFOPLIST_FILE = Metadata/OwlBanners/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hootsuite.com.OwlBanners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
 				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;
@@ -333,6 +743,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		51B584DF1FB22617000DF8EC /* Build configuration list for PBXNativeTarget "OwlBannersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51B584E01FB22617000DF8EC /* Debug */,
+				51B584E11FB22617000DF8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51B585031FB22778000DF8EC /* Build configuration list for PBXNativeTarget "OwlBannerShareDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51B585041FB22778000DF8EC /* Debug */,
+				51B585051FB22778000DF8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AF6DE92D1BC70CB40001598E /* Build configuration list for PBXProject "OwlBanners" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
