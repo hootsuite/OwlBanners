@@ -28,6 +28,7 @@
 		51B585021FB22778000DF8EC /* OwlBannerShareDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51B584F81FB22778000DF8EC /* OwlBannerShareDemo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		51B5850A1FB22809000DF8EC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B585081FB22809000DF8EC /* MainInterface.storyboard */; };
 		51B5850F1FB22831000DF8EC /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5850E1FB22831000DF8EC /* ShareViewController.swift */; };
+		6742601C20AA2BD000566E8E /* OwlBannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6742601B20AA2BD000566E8E /* OwlBannerPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		51B585091FB22809000DF8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		51B5850C1FB22817000DF8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51B5850E1FB22831000DF8EC /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		6742601B20AA2BD000566E8E /* OwlBannerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlBannerPresenter.swift; sourceTree = "<group>"; };
 		A8B767881E5B999F006A2670 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		A8B767891E5B999F006A2670 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AF6DE9331BC70CB40001598E /* OwlBanners.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OwlBanners.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 				51B584991FB22560000DF8EC /* ApplicationContext.swift */,
 				51B5849A1FB22560000DF8EC /* Banner.swift */,
 				51B5849B1FB22560000DF8EC /* DefaultBannerView.swift */,
+				6742601B20AA2BD000566E8E /* OwlBannerPresenter.swift */,
 			);
 			path = OwlBanners;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				51B584B71FB22560000DF8EC /* ApplicationContext.swift in Sources */,
 				51B584B81FB22560000DF8EC /* Banner.swift in Sources */,
 				51B584B91FB22560000DF8EC /* DefaultBannerView.swift in Sources */,
+				6742601C20AA2BD000566E8E /* OwlBannerPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
