@@ -87,7 +87,7 @@ public struct BannerDisplayMetrics {
 
     /// Application proxy that enables the access to required `UIApplication` methods and properties. It used instead of
     /// directly accessing the `UIApplication.shared` to be able to use the framework in app extensions.
-    @objc static open var application: ApplicationContext?
+    @objc static public var application: ApplicationContext?
 
     // MARK: Private Properties
 
