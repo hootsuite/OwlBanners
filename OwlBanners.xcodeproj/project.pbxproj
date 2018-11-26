@@ -351,12 +351,10 @@
 				TargetAttributes = {
 					51B584CF1FB22616000DF8EC = {
 						CreatedOnToolsVersion = 9.1;
-						DevelopmentTeam = QZQ96LVQ9C;
 						ProvisioningStyle = Automatic;
 					};
 					51B584F71FB22778000DF8EC = {
 						CreatedOnToolsVersion = 9.1;
-						DevelopmentTeam = QZQ96LVQ9C;
 						ProvisioningStyle = Automatic;
 					};
 					AF6DE9321BC70CB40001598E = {
@@ -516,7 +514,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QZQ96LVQ9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Metadata/OwlBannersDemo/Info.plist;
@@ -542,7 +540,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QZQ96LVQ9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Metadata/OwlBannersDemo/Info.plist;
@@ -565,7 +563,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QZQ96LVQ9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Metadata/OwlBannersShareDemo/Info.plist;
@@ -590,7 +588,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QZQ96LVQ9C;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Metadata/OwlBannersShareDemo/Info.plist;
