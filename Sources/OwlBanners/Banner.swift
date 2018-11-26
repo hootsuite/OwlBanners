@@ -140,8 +140,8 @@ public struct BannerDisplayMetrics {
         }
         super.init()
         UIDevice.current.beginGeneratingDeviceOrientationNotifications()
-        NotificationCenter.default.addObserver(self, selector: #selector(Banner.deviceOrientationDidChange(_:)), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(Banner.applicationWillChangeStatusBarFrame(_:)), name: NSNotification.Name.UIApplicationWillChangeStatusBarFrame, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(Banner.deviceOrientationDidChange(_:)), name: UIDevice.orientationDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(Banner.applicationWillChangeStatusBarFrame(_:)), name: UIApplication.willChangeStatusBarFrameNotification, object: nil)
     }
 
     deinit {

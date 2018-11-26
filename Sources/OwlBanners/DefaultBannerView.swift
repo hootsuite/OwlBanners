@@ -89,7 +89,7 @@ class DefaultBannerView: UIView, BannerView {
     override func awakeFromNib() {
         super.awakeFromNib()
         let contentSize = Banner.application?.preferredContentSizeCategory ?? .medium
-        let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: UIFontTextStyle.body)
+        let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: UIFont.TextStyle.body)
         titleLabel.font = UIFont(descriptor: descriptor.withSize(DefaultBannerView.fontSizes[contentSize] ?? 17), size: 0)
     }
 
