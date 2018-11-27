@@ -8,7 +8,7 @@ unless system("which swiftlint > /dev/null 2>&1")
   exit 1
 end
 
-MIN_VERSION = '0.18.0'.freeze
+MIN_VERSION = '0.27.0'.freeze
 version = `swiftlint version`.strip
 if Gem::Version.new(version) < Gem::Version.new(MIN_VERSION)
   print "error: please update to SwiftLint version #{MIN_VERSION} (currently on #{version})"
