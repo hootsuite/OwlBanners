@@ -10,6 +10,6 @@ let package = Package(
     dependencies: [
     ],
     targets: [
-        .target(name: "OwlBanners", path: "Sources/OwlBanners"),
+        .target(name: "OwlBanners", path: "Sources/OwlBanners", resources: "Sources/OwlBanners/Resources"),
     ]
 )
