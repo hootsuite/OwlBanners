@@ -7,6 +7,14 @@
 
 import UIKit
 
+fileprivate var bundle: Bundle {
+    #if SWIFT_PACKAGE
+        return Bundle.module
+    #else
+        return Bundle(for: DefaultBannerView.self)
+    #endif
+}
+
 /// Defines banner default styles.
 public enum DefaultBannerStyle: BannerStyle {
     case notice
@@ -17,7 +25,6 @@ public enum DefaultBannerStyle: BannerStyle {
     case info
 
     public var bannerConfiguration: BannerConfiguration {
-        let bundle = Bundle(for: DefaultBannerView.self)
         let view = DefaultBannerView.loadFromNib()
         var requireUserDismissal = false
 
@@ -81,7 +88,6 @@ class DefaultBannerView: UIView, BannerView {
     @IBOutlet fileprivate weak var iconImageView: UIImageView!
 
     class func loadFromNib() -> DefaultBannerView {
-        let bundle = Bundle(for: DefaultBannerView.self)
         let nib = UINib(nibName: "DefaultBannerView", bundle: bundle)
         return nib.instantiate(withOwner: nil, options: nil).first as! DefaultBannerView
     }
