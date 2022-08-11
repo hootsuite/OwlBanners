@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19353F6F2890EC17003D67F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19353F6D2890EC17003D67F7 /* Assets.xcassets */; };
+		19353F702890EC17003D67F7 /* DefaultBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19353F6E2890EC17003D67F7 /* DefaultBannerView.xib */; };
+		19353F782890EC1F003D67F7 /* CatBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19353F722890EC1F003D67F7 /* CatBannerView.xib */; };
+		19353F792890EC1F003D67F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19353F732890EC1F003D67F7 /* Assets.xcassets */; };
+		19353F7A2890EC1F003D67F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19353F742890EC1F003D67F7 /* LaunchScreen.storyboard */; };
+		19353F7B2890EC1F003D67F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19353F762890EC1F003D67F7 /* Main.storyboard */; };
+		19353F7C2890EC1F003D67F7 /* DogBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19353F772890EC1F003D67F7 /* DogBannerView.xib */; };
+		19353F802890EC28003D67F7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19353F7E2890EC28003D67F7 /* MainInterface.storyboard */; };
+		19353F822890ED1D003D67F7 /* OwlBanners.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6DE9331BC70CB40001598E /* OwlBanners.framework */; };
+		19353F832890ED2A003D67F7 /* OwlBanners.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF6DE9331BC70CB40001598E /* OwlBanners.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19353F842890ED38003D67F7 /* OwlBannerShareDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51B584F81FB22778000DF8EC /* OwlBannerShareDemo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		51B584B71FB22560000DF8EC /* ApplicationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B584991FB22560000DF8EC /* ApplicationContext.swift */; };
 		51B584B81FB22560000DF8EC /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5849A1FB22560000DF8EC /* Banner.swift */; };
 		51B584B91FB22560000DF8EC /* DefaultBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5849B1FB22560000DF8EC /* DefaultBannerView.swift */; };
 		51B584BA1FB22560000DF8EC /* OwlBanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 51B5849C1FB22560000DF8EC /* OwlBanners.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51B584C41FB22560000DF8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B584AC1FB22560000DF8EC /* Assets.xcassets */; };
-		51B584C51FB22560000DF8EC /* DefaultBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B584AD1FB22560000DF8EC /* DefaultBannerView.xib */; };
-		51B584E21FB22661000DF8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B584AF1FB22560000DF8EC /* Assets.xcassets */; };
-		51B584E31FB22665000DF8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B584B01FB22560000DF8EC /* LaunchScreen.storyboard */; };
-		51B584E51FB2266B000DF8EC /* CatBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B584B41FB22560000DF8EC /* CatBannerView.xib */; };
-		51B584E61FB2266B000DF8EC /* DogBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B584B51FB22560000DF8EC /* DogBannerView.xib */; };
-		51B584E71FB2266E000DF8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B584B61FB22560000DF8EC /* Main.storyboard */; };
 		51B584E81FB22672000DF8EC /* AnimalBannerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5849E1FB22560000DF8EC /* AnimalBannerStyle.swift */; };
 		51B584E91FB22672000DF8EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5849F1FB22560000DF8EC /* AppDelegate.swift */; };
 		51B584EA1FB22672000DF8EC /* DogBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B584A01FB22560000DF8EC /* DogBannerView.swift */; };
 		51B584EB1FB22672000DF8EC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B584A11FB22560000DF8EC /* MainViewController.swift */; };
 		51B584ED1FB22672000DF8EC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B584A31FB22560000DF8EC /* TestViewController.swift */; };
-		51B584EE1FB226CA000DF8EC /* OwlBanners.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6DE9331BC70CB40001598E /* OwlBanners.framework */; };
-		51B584EF1FB226CA000DF8EC /* OwlBanners.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF6DE9331BC70CB40001598E /* OwlBanners.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		51B585021FB22778000DF8EC /* OwlBannerShareDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51B584F81FB22778000DF8EC /* OwlBannerShareDemo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		51B5850A1FB22809000DF8EC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B585081FB22809000DF8EC /* MainInterface.storyboard */; };
 		51B5850F1FB22831000DF8EC /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5850E1FB22831000DF8EC /* ShareViewController.swift */; };
 		6742601C20AA2BD000566E8E /* OwlBannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6742601B20AA2BD000566E8E /* OwlBannerPresenter.swift */; };
 /* End PBXBuildFile section */
@@ -55,7 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				51B584EF1FB226CA000DF8EC /* OwlBanners.framework in Embed Frameworks */,
+				19353F832890ED2A003D67F7 /* OwlBanners.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				51B585021FB22778000DF8EC /* OwlBannerShareDemo.appex in Embed App Extensions */,
+				19353F842890ED38003D67F7 /* OwlBannerShareDemo.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +74,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19353F6D2890EC17003D67F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19353F6E2890EC17003D67F7 /* DefaultBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultBannerView.xib; sourceTree = "<group>"; };
+		19353F722890EC1F003D67F7 /* CatBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatBannerView.xib; sourceTree = "<group>"; };
+		19353F732890EC1F003D67F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19353F752890EC1F003D67F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19353F762890EC1F003D67F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		19353F772890EC1F003D67F7 /* DogBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogBannerView.xib; sourceTree = "<group>"; };
+		19353F7F2890EC28003D67F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		51B584991FB22560000DF8EC /* ApplicationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationContext.swift; sourceTree = "<group>"; };
 		51B5849A1FB22560000DF8EC /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		51B5849B1FB22560000DF8EC /* DefaultBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultBannerView.swift; sourceTree = "<group>"; };
@@ -85,17 +93,9 @@
 		51B584A31FB22560000DF8EC /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		51B584A41FB22560000DF8EC /* OwlBanners.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OwlBanners.podspec; sourceTree = "<group>"; };
 		51B584A71FB22560000DF8EC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51B584AC1FB22560000DF8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		51B584AD1FB22560000DF8EC /* DefaultBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultBannerView.xib; sourceTree = "<group>"; };
-		51B584AF1FB22560000DF8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		51B584B11FB22560000DF8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		51B584B41FB22560000DF8EC /* CatBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatBannerView.xib; sourceTree = "<group>"; };
-		51B584B51FB22560000DF8EC /* DogBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogBannerView.xib; sourceTree = "<group>"; };
-		51B584B61FB22560000DF8EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		51B584D01FB22616000DF8EC /* OwlBannersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwlBannersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B584DE1FB22617000DF8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51B584F81FB22778000DF8EC /* OwlBannerShareDemo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OwlBannerShareDemo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		51B585091FB22809000DF8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		51B5850C1FB22817000DF8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51B5850E1FB22831000DF8EC /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		6742601B20AA2BD000566E8E /* OwlBannerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlBannerPresenter.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51B584EE1FB226CA000DF8EC /* OwlBanners.framework in Frameworks */,
+				19353F822890ED1D003D67F7 /* OwlBanners.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +130,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19353F6C2890EC17003D67F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19353F6D2890EC17003D67F7 /* Assets.xcassets */,
+				19353F6E2890EC17003D67F7 /* DefaultBannerView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		19353F712890EC1F003D67F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19353F722890EC1F003D67F7 /* CatBannerView.xib */,
+				19353F732890EC1F003D67F7 /* Assets.xcassets */,
+				19353F742890EC1F003D67F7 /* LaunchScreen.storyboard */,
+				19353F762890EC1F003D67F7 /* Main.storyboard */,
+				19353F772890EC1F003D67F7 /* DogBannerView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		19353F7D2890EC28003D67F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19353F7E2890EC28003D67F7 /* MainInterface.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		19353F812890ED1D003D67F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		51B584971FB22560000DF8EC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +179,7 @@
 		51B584981FB22560000DF8EC /* OwlBanners */ = {
 			isa = PBXGroup;
 			children = (
+				19353F6C2890EC17003D67F7 /* Resources */,
 				51B5849C1FB22560000DF8EC /* OwlBanners.h */,
 				51B584991FB22560000DF8EC /* ApplicationContext.swift */,
 				51B5849A1FB22560000DF8EC /* Banner.swift */,
@@ -155,6 +192,7 @@
 		51B5849D1FB22560000DF8EC /* OwlBannersDemo */ = {
 			isa = PBXGroup;
 			children = (
+				19353F712890EC1F003D67F7 /* Resources */,
 				51B5849E1FB22560000DF8EC /* AnimalBannerStyle.swift */,
 				51B5849F1FB22560000DF8EC /* AppDelegate.swift */,
 				51B584A01FB22560000DF8EC /* DogBannerView.swift */,
@@ -190,45 +228,6 @@
 			path = OwlBannersDemo;
 			sourceTree = "<group>";
 		};
-		51B584AA1FB22560000DF8EC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				51B584AB1FB22560000DF8EC /* OwlBanners */,
-				51B584AE1FB22560000DF8EC /* OwlBannersDemo */,
-				51B585071FB22809000DF8EC /* OwlBannersShareDemo */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		51B584AB1FB22560000DF8EC /* OwlBanners */ = {
-			isa = PBXGroup;
-			children = (
-				51B584AC1FB22560000DF8EC /* Assets.xcassets */,
-				51B584AD1FB22560000DF8EC /* DefaultBannerView.xib */,
-			);
-			path = OwlBanners;
-			sourceTree = "<group>";
-		};
-		51B584AE1FB22560000DF8EC /* OwlBannersDemo */ = {
-			isa = PBXGroup;
-			children = (
-				51B584AF1FB22560000DF8EC /* Assets.xcassets */,
-				51B584B41FB22560000DF8EC /* CatBannerView.xib */,
-				51B584B51FB22560000DF8EC /* DogBannerView.xib */,
-				51B584B01FB22560000DF8EC /* LaunchScreen.storyboard */,
-				51B584B61FB22560000DF8EC /* Main.storyboard */,
-			);
-			path = OwlBannersDemo;
-			sourceTree = "<group>";
-		};
-		51B585071FB22809000DF8EC /* OwlBannersShareDemo */ = {
-			isa = PBXGroup;
-			children = (
-				51B585081FB22809000DF8EC /* MainInterface.storyboard */,
-			);
-			path = OwlBannersShareDemo;
-			sourceTree = "<group>";
-		};
 		51B5850B1FB22817000DF8EC /* OwlBannersShareDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +239,7 @@
 		51B5850D1FB22831000DF8EC /* OwlBannersShareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				19353F7D2890EC28003D67F7 /* Resources */,
 				51B5850E1FB22831000DF8EC /* ShareViewController.swift */,
 			);
 			path = OwlBannersShareDemo;
@@ -252,9 +252,9 @@
 				A8B767881E5B999F006A2670 /* LICENSE.md */,
 				51B584A41FB22560000DF8EC /* OwlBanners.podspec */,
 				51B584A51FB22560000DF8EC /* Metadata */,
-				51B584AA1FB22560000DF8EC /* Resources */,
 				51B584971FB22560000DF8EC /* Sources */,
 				AF6DE9341BC70CB40001598E /* Products */,
+				19353F812890ED1D003D67F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -345,7 +345,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = Hootsuite;
 				TargetAttributes = {
 					51B584CF1FB22616000DF8EC = {
@@ -387,11 +387,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51B584E21FB22661000DF8EC /* Assets.xcassets in Resources */,
-				51B584E31FB22665000DF8EC /* LaunchScreen.storyboard in Resources */,
-				51B584E71FB2266E000DF8EC /* Main.storyboard in Resources */,
-				51B584E51FB2266B000DF8EC /* CatBannerView.xib in Resources */,
-				51B584E61FB2266B000DF8EC /* DogBannerView.xib in Resources */,
+				19353F7A2890EC1F003D67F7 /* LaunchScreen.storyboard in Resources */,
+				19353F782890EC1F003D67F7 /* CatBannerView.xib in Resources */,
+				19353F792890EC1F003D67F7 /* Assets.xcassets in Resources */,
+				19353F7B2890EC1F003D67F7 /* Main.storyboard in Resources */,
+				19353F7C2890EC1F003D67F7 /* DogBannerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51B5850A1FB22809000DF8EC /* MainInterface.storyboard in Resources */,
+				19353F802890EC28003D67F7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,8 +407,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51B584C51FB22560000DF8EC /* DefaultBannerView.xib in Resources */,
-				51B584C41FB22560000DF8EC /* Assets.xcassets in Resources */,
+				19353F702890EC17003D67F7 /* DefaultBannerView.xib in Resources */,
+				19353F6F2890EC17003D67F7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,18 +462,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		51B584B01FB22560000DF8EC /* LaunchScreen.storyboard */ = {
+		19353F742890EC1F003D67F7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				51B584B11FB22560000DF8EC /* Base */,
+				19353F752890EC1F003D67F7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		51B585081FB22809000DF8EC /* MainInterface.storyboard */ = {
+		19353F7E2890EC28003D67F7 /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				51B585091FB22809000DF8EC /* Base */,
+				19353F7F2890EC28003D67F7 /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -600,6 +600,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -625,7 +626,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -661,6 +662,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -680,7 +682,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -697,7 +699,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -720,7 +722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
